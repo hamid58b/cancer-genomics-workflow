@@ -9,27 +9,22 @@ requirements:
     - class: MultipleInputFeatureRequirement
 
 inputs:
-    bams:
+    GFFs:
         type: File[]
-    readgroups:
-        type: string[]
-    reference:
+    Assembly_stats:
+        type: File[]
+    Fasta:
+        type: File[]
+    Taxonomy:
         type: File
-        secondaryFiles: [.fai, .bwt, .sa, .ann, .amb, .pac, ^.dict, .alt]
-    dbsnp:
-        type: File
-        secondaryFiles: [.tbi]
-    mills:
-        type: File
-        secondaryFiles: [.tbi]
     known_indels:
         type: File
         secondaryFiles: [.tbi]
 outputs:
-    final_bam:
+    Summary_stats:
         type: File
         outputSource: apply_bqsr/bqsr_bam
-        secondaryFiles: [^.bai]
+        secondaryFiles: [^.csv]
 steps:
     align:
         scatter: [bam, readgroup]
