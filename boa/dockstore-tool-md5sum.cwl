@@ -34,10 +34,29 @@ hints:
 
 inputs:
   GFFs:
+    type: File[]
+    inputBinding:
+      position: 1
+    doc: The file that will have its md5sum calculated.
+
+Fasta:
+    type: File[]
+    inputBinding:
+      position: 1
+    doc: The file that will have its md5sum calculated.
+
+Assembly_stats:
+    type: File[]
+    inputBinding:
+      position: 1
+    doc: The file that will have its md5sum calculated.
+
+Taxonomy:
     type: File
     inputBinding:
       position: 1
     doc: The file that will have its md5sum calculated.
+
 
 outputs:
   output_file:
