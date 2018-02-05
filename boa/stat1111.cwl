@@ -2,7 +2,11 @@ cwlVersion: v1.0
 class: Workflow
 
 inputs:
-  GFFs: File
+  GFFs: File[]
+  Fasta: File[]
+  Assembly_Stats: File[]
+  Taxonomy: File[]
+  
 
 outputs:
   output_file:
@@ -14,4 +18,7 @@ steps:
     run: dockstore-tool-md5sum.cwl
     in:
       GFFs: GFFs
+      Fasta: Fasta
+      Assembly_Stats: Assembly_Stats
+      Taxonomy: Taxonomy
     out: [output_file]
