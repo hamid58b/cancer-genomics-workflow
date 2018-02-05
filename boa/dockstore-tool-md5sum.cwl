@@ -33,7 +33,7 @@ hints:
   outdirMin: 512
 
 inputs:
-  input_file:
+  GFFs:
     type: File
     inputBinding:
       position: 1
