@@ -2,7 +2,7 @@ cwlVersion: v1.0
 class: Workflow
 
 inputs:
-  input_file: File
+  GFFs: File
 
 outputs:
   output_file:
