@@ -13,5 +13,5 @@ steps:
   md5sum:
     run: dockstore-tool-md5sum.cwl
     in:
-      input_file: input_file
+      GFFs: GFFs
     out: [output_file]
