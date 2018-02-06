@@ -6,7 +6,7 @@ baseCommand: echo
 label: 'Schema and Compiler Generator'
 
 inputs:
-    Gene_Ontology:
+    Schema:
         type: File
     sequence_file:
         type: File
