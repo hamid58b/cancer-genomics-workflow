@@ -1,7 +1,6 @@
 cwlVersion: v1.0
 
 class: CommandLineTool
-baseCommand: [tar]
 
 label: 'Data Processing'
 
