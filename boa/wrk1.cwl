@@ -6,12 +6,13 @@ inputs:
   Fasta_Files: File[]
   Assembly_Stats_Files: File[]
   Taxonomy_database: File
+  Gene_Ontology: File
   
 
 outputs:
   Summary_stats:
     type: File
-    outputSource: processing/Summary_stats
+    outputSource: process/Summary_Stats
   
     
 steps:
@@ -23,11 +24,27 @@ steps:
       Assembly_Stats_Files: Assembly_Stats_Files
     out: [GFFs,Fasta,Assembly_Stats]
     
-  processing:
-    run: process.cwl
+  schema_gen:
+    run: schema.cwl
+    in:
+      Gene_Ontology: Gene_Ontology
+    out: [Schema]  
+  
+  data_gen:
+    run: data_gen.cwl
     in:
       Taxonomy_database: Taxonomy_database
       GFFs: cleaning/GFFs
       Fasta: cleaning/Fasta
       Assembly_Stats: cleaning/Assembly_Stats
-    out: [Summary_stats]  
+      Schema : schema_gen/Schema
+    out: [Hadoop_Sequence_File]  
+  
+  process:
+    run: process.cwl
+    in:
+      sequence_file: data_gen/Hadoop_Sequence_File
+      Schema: schema_gen/Schema
+     
+    out: [Summary_Stats]  
+  
