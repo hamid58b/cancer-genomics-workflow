@@ -12,6 +12,9 @@ outputs:
   Summary_stats:
     type: File
     outputSource: md5sum/output_file
+   Assembly_stats:
+    type: File
+    outputSource: md5sum/output_file
     
 steps:
   md5sum:
@@ -21,4 +24,4 @@ steps:
       Fasta: Fasta
       Assembly_Stats: Assembly_Stats
       Taxonomy: Taxonomy
-    out: [output_file]
+    out: [output_file ]
