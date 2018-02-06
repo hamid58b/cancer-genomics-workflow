@@ -30,4 +30,4 @@ steps:
       GFFs: cleaning/GFFs
       Fasta: cleaning/Fasta
       Assembly_Stats: cleaning/Assembly_Stats
-    out: [stats]  
+    out: [Summary_stats]  
