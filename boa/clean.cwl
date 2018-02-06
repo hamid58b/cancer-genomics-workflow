@@ -6,11 +6,11 @@ baseCommand: [tar]
 label: 'Data Cleaning'
 
 inputs:
-    GFF_Files1:
+    GFF_Files:
         type: File[]
-    Fasta_Files1: 
+    Fasta_Files: 
         type: File[]
-    Assembly_Stats_Files1: 
+    Assembly_Stats_Files: 
         type: File[]
 
   
