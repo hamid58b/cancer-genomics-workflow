@@ -6,11 +6,11 @@ baseCommand: echo
 label: 'Data Processing'
 
 inputs:
-    GFF_Files:
+    GFFs:
         type: File[]
-    Fasta_Files: 
+    Fasta: 
         type: File[]
-    Assembly_Stats_Files: 
+    Assembly_Stats: 
         type: File[]
     Taxonomy_database: 
         type: File
