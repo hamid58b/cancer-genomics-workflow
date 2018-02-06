@@ -1,5 +1,7 @@
 cwlVersion: v1.0
+
 class: CommandLineTool
+baseCommand: [tar]
 
 label: 'Data Processing'
 
@@ -13,7 +15,6 @@ inputs:
     Taxonomy_database: 
         type: File
     
-
   
 outputs:
     Summary_stats:
