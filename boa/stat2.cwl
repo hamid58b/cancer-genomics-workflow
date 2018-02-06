@@ -9,10 +9,13 @@ inputs:
   
 
 outputs:
-  output_file:
+  Summary_stats:
     type: File
     outputSource: md5sum/output_file
-
+ Summary_stats:
+    type: File
+    outputSource: md5sum/output_file
+    
 steps:
   md5sum:
     run: dockstore-tool-md5sum.cwl
