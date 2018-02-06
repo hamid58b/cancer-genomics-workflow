@@ -15,9 +15,9 @@ inputs:
 
   
 outputs:
-    GFF_Files2:
+    GFFs:
         type: File[]
-    Fasta_Files2: 
+    Fasta: 
         type: File[]
-    Assembly_Stats_Files2: 
+    Assembly_Stats: 
         type: File[]
