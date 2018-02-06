@@ -3,7 +3,7 @@ cwlVersion: v1.0
 class: CommandLineTool
 baseCommand: echo
 
-label: 'Data Processing'
+label: 'Data Generation'
 
 inputs:
     GFFs:
@@ -14,8 +14,10 @@ inputs:
         type: File[]
     Taxonomy_database: 
         type: File
-    
+    Schema: 
+        type: File   
+
   
 outputs:
-    Summary_stats:
+    Hadoop_Sequence_File:
         type: File
