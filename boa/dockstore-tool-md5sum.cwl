@@ -69,4 +69,4 @@ outputs:
   output_file2:
     type: File
     doc: Assembly statistics
-baseCommand: [/bin/my_md5sum]
+
