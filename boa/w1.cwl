@@ -11,7 +11,7 @@ inputs:
 outputs:
   Summary_stats:
     type: File
-    outputSource: processing/stats
+    outputSource: processing/Summary_stats
   
     
 steps:
