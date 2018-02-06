@@ -1,6 +1,7 @@
 
 cwlVersion: v1.0
-class: Workflow
+class: CommandLineTool
+baseCommand: echo
 
 label: 'Data Cleaning'
 
