@@ -4,18 +4,18 @@ class: CommandLineTool
 label: 'Data Cleaning'
 
 inputs:
-    GFF_Files:
+    GFF_Files1:
         type: File[]
-    Fasta_Files: 
+    Fasta_Files1: 
         type: File[]
-    Assembly_Stats_Files: 
+    Assembly_Stats_Files1: 
         type: File[]
 
   
 outputs:
-    GFF_Files:
+    GFF_Files1:
         type: File[]
-    Fasta_Files: 
+    Fasta_Files1: 
         type: File[]
-    Assembly_Stats_Files: 
+    Assembly_Stats_Files1: 
         type: File[]
