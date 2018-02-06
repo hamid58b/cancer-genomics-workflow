@@ -1,7 +1,7 @@
 
 cwlVersion: v1.0
 class: CommandLineTool
-baseCommand: [CMD_PREFIXreadfile]
+baseCommand: [tar]
 
 label: 'Data Cleaning'
 
