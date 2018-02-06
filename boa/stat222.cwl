@@ -12,9 +12,7 @@ outputs:
   Summary_stats:
     type: File
     outputSource: md5sum/output_file1
-   Assembly_stats:
-    type: File
-    outputSource: md5sum/output_file2
+  
     
 steps:
   md5sum:
