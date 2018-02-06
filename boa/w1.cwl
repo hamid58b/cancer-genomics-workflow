@@ -5,7 +5,7 @@ inputs:
   GFF_Files: File[]
   Fasta_Files: File[]
   Assembly_Stats_Files: File[]
-  Taxonomy_database: File[]
+  Taxonomy_database: File
   
 
 outputs:
