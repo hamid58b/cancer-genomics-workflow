@@ -46,5 +46,5 @@ steps:
       sequence_file: data_gen/Hadoop_Sequence_File
       Schema: schema_gen/Schema
      
-    out: [Summary_Stats]  
+    out: [Comparative_Genomics_Stats,Summary_Stats]  
   
