@@ -1,6 +1,5 @@
 cwlVersion: v1.0
 class: Workflow
-
 doc: |
    This workflow describes the comparative genomics
    and genome assembly summary statistics 
