@@ -2,11 +2,12 @@ cwlVersion: v1.0
 class: Workflow
 
 doc: |
-   This workflow describes the comparative genomics and genome assembly summary statistics from the entire NCBI Refseq
+   This workflow describes the comparative genomics
+   and genome assembly summary statistics 
    
 requirements:
   - class: DockerRequirement
-    dockerPull: https://hub.docker.com/r/commonworkflowlanguage/cwlviewer/
+    dockerPull: https://hub.docker.com/cwlviewer/
   
 inputs:
   GFF_Files: File[]
