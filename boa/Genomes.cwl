@@ -20,7 +20,7 @@ outputs:
   Comparative_Genomics_Stats:
     type: File
     outputSource: process/Comparative_Genomics_Stats
-  Assemly_Stats:
+  Assembly_Stats:
     type: File
     outputSource: process/Assembly_Stats
     
