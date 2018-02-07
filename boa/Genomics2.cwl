@@ -53,7 +53,6 @@ steps:
     run: process.cwl
     in:
       sequence_file: data_gen/Hadoop_Sequence_File
-      Schema: schema_gen/Schema
-     
+      Schema: schema_gen/Schema 
     out: [Comparative_Genomics_Stats , Assembly_Stats]  
   
