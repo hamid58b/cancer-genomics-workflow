@@ -1,6 +1,8 @@
 cwlVersion: v1.0
 class: Workflow
 
+doc: |
+   This workflow describes the comparative genomics and genome assembly summary statistics from the entire NCBI Refseq
 inputs:
   GFF_Files: File[]
   Fasta_Files: File[]
