@@ -15,7 +15,7 @@ outputs:
     outputSource: process/Comparative_Genomics_Stats
   Assemly_Stats:
     type: File
-    outputSource: process/Assemly_Stats
+    outputSource: process/Assembly_Stats
     
 steps:
   cleaning:
@@ -48,5 +48,5 @@ steps:
       sequence_file: data_gen/Hadoop_Sequence_File
       Schema: schema_gen/Schema
      
-    out: [Comparative_Genomics_Stats , Assemly_Stats]  
+    out: [Comparative_Genomics_Stats , Assembly_Stats]  
   
