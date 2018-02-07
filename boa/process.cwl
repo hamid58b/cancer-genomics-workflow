@@ -11,5 +11,7 @@ inputs:
     sequence_file:
         type: File
 outputs:
-    Summary_Stats:
+    Comparative_Genomics_Stats:
         type: File
+    Assembly_Stats:
+        type: File    
