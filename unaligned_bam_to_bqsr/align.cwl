@@ -3,6 +3,15 @@
 cwlVersion: v1.0
 class: Workflow
 label: 'Unaligned to aligned BAM'
+
+hints:
+  SoftwareRequirement:
+    packages:
+      interproscan:
+        specs: [ "https://identifiers.org/rrid/RRID:SCR_005829" ]
+        version: [ "5.21-60" ]
+    clause:
+      comm: [ "0.94: corrected(Fastq) :- receives(Fastq)"]
 requirements:
     - class: ScatterFeatureRequirement
     - class: SubworkflowFeatureRequirement
